@@ -3,9 +3,11 @@
 #   the COPYRIGHT file.
 
 default:
+  # Url of this host as seen from internet e. g., http://example.org/.
+  pod_url: "http://localhost:3000/"
 
-  # Hostname of this host, as seen from the internet.
-  pod_url: "http://localhost:3000"
+  # The local url thin web server responds to.
+  local_url: "http://localhost:3000/"
 
   # Set this to true in order to close signups.  Users will still be
   # able to invite other people to join.
@@ -68,12 +70,11 @@ default:
 
   #google analytics key, if false, it won't include the javascript
   google_a_site: false
-  
+
   #piwik integration if not set, no javascript included
-  piwik_id: 
+  piwik_id:
   # the site url in raw format (e.g. pikwik.examplehost.com)
-  piwik_url: 
-  
+  piwik_url:
 
   #cloudfiles username and api-key, used for backups
   cloudfiles_username: 'example'
@@ -83,7 +84,7 @@ default:
 development:
 
 test:
-  pod_url: "http://example.org/"
+  pod_url: "http://localhost:9887/"
   socket_port: 8081
 
 production:
